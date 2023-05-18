@@ -1,0 +1,8 @@
+C:\Users\kawser\source\repos\ClassDemo1\bin\Debug\ClassDemo1.exe.config
+C:\Users\kawser\source\repos\ClassDemo1\bin\Debug\ClassDemo1.exe
+C:\Users\kawser\source\repos\ClassDemo1\bin\Debug\ClassDemo1.pdb
+C:\Users\kawser\source\repos\ClassDemo1\obj\Debug\ClassDemo1.csproj.AssemblyReference.cache
+C:\Users\kawser\source\repos\ClassDemo1\obj\Debug\ClassDemo1.csproj.SuggestedBindingRedirects.cache
+C:\Users\kawser\source\repos\ClassDemo1\obj\Debug\ClassDemo1.csproj.CoreCompileInputs.cache
+C:\Users\kawser\source\repos\ClassDemo1\obj\Debug\ClassDemo1.exe
+C:\Users\kawser\source\repos\ClassDemo1\obj\Debug\ClassDemo1.pdb

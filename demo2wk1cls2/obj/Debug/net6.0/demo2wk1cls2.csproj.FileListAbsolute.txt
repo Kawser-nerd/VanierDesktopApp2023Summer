@@ -1,0 +1,15 @@
+C:\Users\kawser\source\repos\demo2wk1cls2\bin\Debug\net6.0\demo2wk1cls2.exe
+C:\Users\kawser\source\repos\demo2wk1cls2\bin\Debug\net6.0\demo2wk1cls2.deps.json
+C:\Users\kawser\source\repos\demo2wk1cls2\bin\Debug\net6.0\demo2wk1cls2.runtimeconfig.json
+C:\Users\kawser\source\repos\demo2wk1cls2\bin\Debug\net6.0\demo2wk1cls2.dll
+C:\Users\kawser\source\repos\demo2wk1cls2\bin\Debug\net6.0\demo2wk1cls2.pdb
+C:\Users\kawser\source\repos\demo2wk1cls2\obj\Debug\net6.0\demo2wk1cls2.csproj.AssemblyReference.cache
+C:\Users\kawser\source\repos\demo2wk1cls2\obj\Debug\net6.0\demo2wk1cls2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kawser\source\repos\demo2wk1cls2\obj\Debug\net6.0\demo2wk1cls2.AssemblyInfoInputs.cache
+C:\Users\kawser\source\repos\demo2wk1cls2\obj\Debug\net6.0\demo2wk1cls2.AssemblyInfo.cs
+C:\Users\kawser\source\repos\demo2wk1cls2\obj\Debug\net6.0\demo2wk1cls2.csproj.CoreCompileInputs.cache
+C:\Users\kawser\source\repos\demo2wk1cls2\obj\Debug\net6.0\demo2wk1cls2.dll
+C:\Users\kawser\source\repos\demo2wk1cls2\obj\Debug\net6.0\refint\demo2wk1cls2.dll
+C:\Users\kawser\source\repos\demo2wk1cls2\obj\Debug\net6.0\demo2wk1cls2.pdb
+C:\Users\kawser\source\repos\demo2wk1cls2\obj\Debug\net6.0\demo2wk1cls2.genruntimeconfig.cache
+C:\Users\kawser\source\repos\demo2wk1cls2\obj\Debug\net6.0\ref\demo2wk1cls2.dll
