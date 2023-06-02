@@ -12,20 +12,27 @@ namespace GradeWk3cls3
         // to create an array of instances
         // in other word, we are going to create a Class type array
 
-        private CourseList[] courseLists = new CourseList[4];
+        private static CourseList[] courseLists = new CourseList[4];
         // the upper line means, we are going to create four instances
         // of the CourseList class.
         // if we want to create a Class Type array, we need to use the 
         // class name as the datetype of the array.
 
-        private double termAverage=0;
+        private static double termAverage=0;
 
-        public void setCourseMarks()
+        
+        public static void setCourseMarks()
         {
             // we need to provide values for four courses from the users
             for(int i = 0; i < courseLists.Length; i++)
             {
-                courseLists[i] = new CourseList(); // we need to dynamically allocation the class instance
+                courseLists[i] = new CourseList(); 
+                /*
+                 * At the beginning, we created ArraysOfInstances for CourseList class, but
+                 * after that, we need to create the instances of the class one after another
+                 * to put/hold them with the courseList array variables
+                 */
+                // we need to dynamically allocation the class instance
                 Console.WriteLine("Enter Course Name for course "+ i);
                 // courseLists are holding the instances of CourseList class
                 // courseLists[0] means the first instance
@@ -45,7 +52,7 @@ namespace GradeWk3cls3
             }
         }
 
-        public double getTermAverage() 
+        public static double getTermAverage() 
         {
             double tempTotal = 0;
 
@@ -63,7 +70,7 @@ namespace GradeWk3cls3
             return termAverage; 
         }
 
-        public string getGrade()
+        public static string getGrade()
         {
             termAverage = getTermAverage(); // this line will help us
             // to call the inner method and get the termAverage by calculating

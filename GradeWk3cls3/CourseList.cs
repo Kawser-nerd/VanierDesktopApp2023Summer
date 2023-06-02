@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GradeWk3cls3
 {
-    internal class CourseList
+   internal class CourseList
     { 
         private string courseName;
         private double courseMarks;

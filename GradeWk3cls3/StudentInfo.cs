@@ -6,39 +6,41 @@ using System.Threading.Tasks;
 
 namespace GradeWk3cls3
 {
-    internal class StudentInfo
+    class StudentInfo:TestScores // studentInfo is inheriting TestScores members
     {
-        private string studentName;
-        private int studentID;
-        private string term;
-
-        public void setStudentName(string N)
+        private static string studentName;
+        private static int studentID;
+        private static string term;
+        // when we declare any member as static, that means that variable or method
+        // value, member value might get updated or changed inside the program more
+        // than once
+        public static void setStudentName(string N)
         {
-            this.studentName= N;
+            studentName= N;
         }
-        public string getStuentName()
+        public static string getStuentName()
         {
-            return this.studentName;
-        }
-
-        public void setStudentID(int id)
-        {
-            this.studentID = id;
+            return studentName;
         }
 
-        public int getStudentID()
+        public static void setStudentID(int id)
         {
-            return this.studentID;
+            studentID = id;
         }
 
-        public void setTerm(string T)
+        public static int getStudentID()
         {
-            this.term = T;
+            return studentID;
         }
 
-        public string getTerm()
+        public static void setTerm(string T)
         {
-            return this.term;
+            term = T;
+        }
+
+        public static string getTerm()
+        {
+            return term;
         }
     }
 }
