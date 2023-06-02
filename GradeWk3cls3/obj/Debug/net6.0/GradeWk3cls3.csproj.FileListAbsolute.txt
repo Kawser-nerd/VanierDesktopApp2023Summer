@@ -1,0 +1,15 @@
+C:\Users\knafi\source\repos\GradeWk3cls3\bin\Debug\net6.0\GradeWk3cls3.exe
+C:\Users\knafi\source\repos\GradeWk3cls3\bin\Debug\net6.0\GradeWk3cls3.deps.json
+C:\Users\knafi\source\repos\GradeWk3cls3\bin\Debug\net6.0\GradeWk3cls3.runtimeconfig.json
+C:\Users\knafi\source\repos\GradeWk3cls3\bin\Debug\net6.0\GradeWk3cls3.dll
+C:\Users\knafi\source\repos\GradeWk3cls3\bin\Debug\net6.0\GradeWk3cls3.pdb
+C:\Users\knafi\source\repos\GradeWk3cls3\obj\Debug\net6.0\GradeWk3cls3.csproj.AssemblyReference.cache
+C:\Users\knafi\source\repos\GradeWk3cls3\obj\Debug\net6.0\GradeWk3cls3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\knafi\source\repos\GradeWk3cls3\obj\Debug\net6.0\GradeWk3cls3.AssemblyInfoInputs.cache
+C:\Users\knafi\source\repos\GradeWk3cls3\obj\Debug\net6.0\GradeWk3cls3.AssemblyInfo.cs
+C:\Users\knafi\source\repos\GradeWk3cls3\obj\Debug\net6.0\GradeWk3cls3.csproj.CoreCompileInputs.cache
+C:\Users\knafi\source\repos\GradeWk3cls3\obj\Debug\net6.0\GradeWk3cls3.dll
+C:\Users\knafi\source\repos\GradeWk3cls3\obj\Debug\net6.0\refint\GradeWk3cls3.dll
+C:\Users\knafi\source\repos\GradeWk3cls3\obj\Debug\net6.0\GradeWk3cls3.pdb
+C:\Users\knafi\source\repos\GradeWk3cls3\obj\Debug\net6.0\GradeWk3cls3.genruntimeconfig.cache
+C:\Users\knafi\source\repos\GradeWk3cls3\obj\Debug\net6.0\ref\GradeWk3cls3.dll
