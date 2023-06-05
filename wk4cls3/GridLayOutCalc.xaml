@@ -8,27 +8,33 @@
         Title="GridLayOutCalc" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="85*"/>
-            <RowDefinition Height="85*"/>
-            <RowDefinition Height="85*"/>
-            <RowDefinition Height="85*"/>
-            <RowDefinition Height="85*"/>
+            <RowDefinition Height="99*"/>
+            <RowDefinition Height="46*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="145*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="160*"/>
-            <ColumnDefinition Width="160*"/>
-            <ColumnDefinition Width="160*"/>
-            <ColumnDefinition Width="160*"/>
-            <ColumnDefinition Width="160*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="textBoxOne" Grid.Column="1" HorizontalAlignment="Center" Margin="0,20,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Insert Num One" VerticalAlignment="Top" Width="160" Height="23" FontSize="16"/>
-        <TextBox x:Name="textBoxTwo" Grid.Column="3" HorizontalAlignment="Center" Margin="0,20,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Insert Num Two" VerticalAlignment="Top" Width="160" FontSize="16"/>
-        <Label x:Name="label" Content="Mini Calculator For Grid Layout" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Width="278" Height="41" Grid.Row="0" Grid.ColumnSpan="3" Grid.Column="1" Margin="117,36,0,0"/>
-        <Button x:Name="Addition" Content="+" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" FontSize="16" Width="160" Height="32"/>
-        <Button x:Name="Substraction" Content="-" HorizontalAlignment="Center" Margin="0,28,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="16" Width="24" Grid.Column="1"/>
-        <Button x:Name="Multiplication" Content="*" HorizontalAlignment="Left" Margin="111,40,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="16" Width="24" Grid.Column="1"/>
-        <Button x:Name="division" Content="/" HorizontalAlignment="Center" Margin="0,28,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="16" Width="24" Grid.Column="3"/>
+        <TextBox x:Name="textBoxOne" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="Insert 1st Number" VerticalAlignment="Center" Width="180" Height="26" FontSize="16"/>
+        <TextBox x:Name="textBoxTwo" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="Insert 2nd Number" VerticalAlignment="Center" Width="180" Height="26" FontSize="16" />
+        <Label x:Name="Name" Grid.Row="0" Content="Mini Calculator for GUI" Margin="0,20,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2" Height="29" Width="210" FontSize="18" HorizontalAlignment="Center"/>
+        <Button x:Name="Addition" Content="+" HorizontalAlignment="Left" Margin="148,15,0,0" Grid.Row="2" VerticalAlignment="Top" Height="45" Width="42" FontSize="18" Click="Addition_Click"/>
 
-
+        <Button x:Name="Division" Content="/" HorizontalAlignment="Left" Margin="25,15,0,0" Grid.Row="2" VerticalAlignment="Top" Height="45" Width="42" FontSize="18" Grid.Column="2" Click="Division_Click"/>
+        <Button x:Name="Modulus" Content="%" HorizontalAlignment="Left" Margin="118,0,0,0" Grid.Row="2" VerticalAlignment="Center" Height="45" Width="42" FontSize="18" Grid.Column="2" RenderTransformOrigin="2.595,0.445" Click="Modulus_Click"/>
+        <Button x:Name="Clear" Content="Clear" HorizontalAlignment="Left" Margin="22,15,0,0" Grid.Row="2" VerticalAlignment="Top" Height="45" Width="60" FontSize="18" Grid.Column="3" RenderTransformOrigin="2.595,0.445" Click="Clear_Click"/>
+        <Label x:Name="Result" Grid.Column="1" Grid.ColumnSpan="2" Content="Result" HorizontalAlignment="Center" Margin="0,37,0,0" Grid.Row="3" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="textBoxSingle" Grid.Column="1" HorizontalAlignment="Left" Height="36" Margin="114,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="Insert New Numbers" VerticalAlignment="Center" Width="174" Grid.ColumnSpan="2" FontSize="16"/>
+        <StackPanel Grid.Column="1" Grid.Row="2">
+            <Button x:Name="Substraction" Content="-" Height="25" Width="162" FontSize="18" Click="Substraction_Click"/>
+            <Button x:Name="Multiplicaiton" Content="x" Height="28" Width="160" FontSize="18" Click="Multiplicaiton_Click"/>
+        </StackPanel>
     </Grid>
+
+
 </Window>

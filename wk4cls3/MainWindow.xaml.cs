@@ -23,8 +23,7 @@ namespace wk4cls3
         public MainWindow()
         {
             InitializeComponent();
-            GridLayOutCalc grc = new GridLayOutCalc();
-            grc.Show();
+            
         }
 
         /*
@@ -76,6 +75,18 @@ namespace wk4cls3
             // to call another wpf class, we need to create the instance of that class
             GridLayOutCalc grC = new GridLayOutCalc();
             grC.Show();
+        }
+
+        private void StackPanel_Click(object sender, RoutedEventArgs e)
+        {
+            StackPanel sp = new StackPanel();
+            sp.Show();
+        }
+
+        private void WrapPanel_Click(object sender, RoutedEventArgs e)
+        {
+            WrapPanel wp = new WrapPanel();
+            wp.Show();
         }
 
         // Now perform action listner for multiplication, division and modulus and 

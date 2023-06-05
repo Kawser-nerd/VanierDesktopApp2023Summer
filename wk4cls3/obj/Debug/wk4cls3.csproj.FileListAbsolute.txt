@@ -16,3 +16,7 @@ C:\Users\kawser\source\repos\wk4cls3\obj\Debug\wk4cls3.exe
 C:\Users\kawser\source\repos\wk4cls3\obj\Debug\wk4cls3.pdb
 C:\Users\kawser\source\repos\wk4cls3\obj\Debug\GridLayOutCalc.g.cs
 C:\Users\kawser\source\repos\wk4cls3\obj\Debug\GridLayOutCalc.baml
+C:\Users\kawser\source\repos\wk4cls3\obj\Debug\StackPanel.g.cs
+C:\Users\kawser\source\repos\wk4cls3\obj\Debug\StackPanel.baml
+C:\Users\kawser\source\repos\wk4cls3\obj\Debug\WrapPanel.g.cs
+C:\Users\kawser\source\repos\wk4cls3\obj\Debug\WrapPanel.baml
