@@ -58,6 +58,12 @@
     <Compile Include="Canvas.xaml.cs">
       <DependentUpon>Canvas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls.xaml.cs">
+      <DependentUpon>Controls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DockPanel.xaml.cs">
+      <DependentUpon>DockPanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StackPanel.xaml.cs">
       <DependentUpon>StackPanel.xaml</DependentUpon>
     </Compile>
@@ -65,6 +71,14 @@
       <DependentUpon>WrapPanel.xaml</DependentUpon>
     </Compile>
     <Page Include="Canvas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DockPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

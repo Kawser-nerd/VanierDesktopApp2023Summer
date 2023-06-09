@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace wk4cls3
 {
     /// <summary>
-    /// Interaction logic for StackPanel.xaml
+    /// Interaction logic for DockPanel.xaml
     /// </summary>
-    public partial class StackPanel : Window
+    public partial class DockPanel : Window
     {
-        public StackPanel()
+        public DockPanel()
         {
             InitializeComponent();
         }

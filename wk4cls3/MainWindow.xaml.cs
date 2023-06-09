@@ -89,6 +89,24 @@ namespace wk4cls3
             wp.Show();
         }
 
+        private void Canvas_Click(object sender, RoutedEventArgs e)
+        {
+            Canvas canvas = new Canvas();
+            canvas.Show();
+        }
+
+        private void DockPlance_Click(object sender, RoutedEventArgs e)
+        {
+            DockPanel dockPanel = new DockPanel();  
+            dockPanel.Show();
+        }
+
+        private void control_Click(object sender, RoutedEventArgs e)
+        {
+            Controls controls = new Controls();
+            controls.Show();
+            this.Close();
+        }
         // Now perform action listner for multiplication, division and modulus and 
         // show the result in the result label
     }

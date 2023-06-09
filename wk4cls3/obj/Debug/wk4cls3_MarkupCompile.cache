@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\kawser\source\repos\wk4cls3\App.xaml
-41949480130
+71427496379
 
-8-2039584
+11630073167
 13-1310406943
-GridLayOutCalc.xaml;MainWindow.xaml;StackPanel.xaml;WrapPanel.xaml;
+Canvas.xaml;Controls.xaml;DockPanel.xaml;GridLayOutCalc.xaml;MainWindow.xaml;StackPanel.xaml;WrapPanel.xaml;
 
 False
 

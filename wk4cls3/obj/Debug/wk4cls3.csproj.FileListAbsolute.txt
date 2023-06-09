@@ -20,3 +20,9 @@ C:\Users\kawser\source\repos\wk4cls3\obj\Debug\StackPanel.g.cs
 C:\Users\kawser\source\repos\wk4cls3\obj\Debug\StackPanel.baml
 C:\Users\kawser\source\repos\wk4cls3\obj\Debug\WrapPanel.g.cs
 C:\Users\kawser\source\repos\wk4cls3\obj\Debug\WrapPanel.baml
+C:\Users\kawser\source\repos\wk4cls3\obj\Debug\Canvas.g.cs
+C:\Users\kawser\source\repos\wk4cls3\obj\Debug\Canvas.baml
+C:\Users\kawser\source\repos\wk4cls3\obj\Debug\DockPanel.g.cs
+C:\Users\kawser\source\repos\wk4cls3\obj\Debug\DockPanel.baml
+C:\Users\kawser\source\repos\wk4cls3\obj\Debug\Controls.g.cs
+C:\Users\kawser\source\repos\wk4cls3\obj\Debug\Controls.baml

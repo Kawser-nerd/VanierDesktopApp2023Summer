@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="Canvas" Height="450" Width="800">
     <Canvas>
-        <Button x:Name="button" Content="Button" Canvas.Left="132" Canvas.Top="78" RenderTransformOrigin="0.222,1.885"/>
-        <Label x:Name="label" Content="Label" Canvas.Left="203" Canvas.Top="75"/>
+        <TextBox x:Name="textBox" Canvas.Left="325" TextWrapping="Wrap" Text="TextBox" Canvas.Top="75" Width="120"/>
+        <TextBox x:Name="textBox1" Canvas.Left="325" TextWrapping="Wrap" Text="TextBox" Canvas.Top="127" Width="120"/>
+        <Button x:Name="button" Content="Button" Canvas.Left="325" Canvas.Top="197"/>
+        <Button x:Name="button1" Content="Button" Canvas.Left="405" Canvas.Top="197" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="label" Content="Label" Canvas.Left="643" Canvas.Top="75"/>
     </Canvas>
 </Window>

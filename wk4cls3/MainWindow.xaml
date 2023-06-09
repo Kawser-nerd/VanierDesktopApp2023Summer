@@ -20,6 +20,8 @@
         <Button x:Name="Grid" Content="GridLayout" HorizontalAlignment="Left" Margin="517,349,0,0" VerticalAlignment="Top" FontSize="16" Click="Grid_Click"/>
         <Button x:Name="StackPanel" Content="StackPanel" HorizontalAlignment="Left" Margin="635,349,0,0" VerticalAlignment="Top" Height="25" Width="61" FontSize="14" Click="StackPanel_Click"/>
         <Button x:Name="WrapPanel" Content="WrapPanel" HorizontalAlignment="Left" Margin="360,348,0,0" VerticalAlignment="Top" FontSize="16" Height="26" Width="101" Click="WrapPanel_Click"/>
-
+        <Button x:Name="Canvas" Content="Canvas" HorizontalAlignment="Left" Margin="200,348,0,0" VerticalAlignment="Top" FontSize="16" Height="26" Click="Canvas_Click" Width="101"/>
+        <Button x:Name="DockPlance" Content="DockPanel" HorizontalAlignment="Left" Margin="74,349,0,0" VerticalAlignment="Top" FontSize="16" Click="DockPlance_Click"/>
+        <Button x:Name="control" Content="Controls" HorizontalAlignment="Left" Margin="113,276,0,0" VerticalAlignment="Top" FontSize="16" Click="control_Click"/>
     </Grid>
 </Window>

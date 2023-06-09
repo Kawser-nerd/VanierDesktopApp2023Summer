@@ -1,0 +1,20 @@
+﻿<Window x:Class="wk4cls3.DockPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wk4cls3"
+        mc:Ignorable="d"
+        Title="DockPanel" Height="450" Width="800">
+    
+        <DockPanel LastChildFill="True">
+            <Button x:Name="buttonLeft" Content="ButtonLeft" Width="110"  DockPanel.Dock="Left" Height="413"/>
+            <Button x:Name="buttonTop" Content="ButtonTop" DockPanel.Dock="Top" Height="100" Width="684"/>
+            <Button x:Name="buttonBottom" Content="ButtonBottom" DockPanel.Dock="Bottom" Height="56" />
+        <Button x:Name="button" Content="Button" DockPanel.Dock="Right" />
+        <Button x:Name="button1" Content="Button" DockPanel.Dock="Bottom" Height="41" />
+        <ListBox x:Name="listBox" Width="306" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+    </DockPanel>
+        
+    
+</Window>
