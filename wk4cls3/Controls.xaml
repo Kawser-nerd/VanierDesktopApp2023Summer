@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wk4cls3"
         mc:Ignorable="d"
-        Title="Controls" Height="450" Width="800">
-    <Grid>
-        <ListBox x:Name="listBox" Margin="110,72,514,197" FontSize="16" SelectionMode="Multiple" SelectionChanged="listBox_SelectionChanged" 
+        Title="Controls" Height="650" Width="800">
+    <Grid Margin="0,0,-34,-40">
+        <ListBox x:Name="listBox" Margin="110,72,514,485" FontSize="16" SelectionMode="Multiple" SelectionChanged="listBox_SelectionChanged" 
                  ItemsSource="{Binding nameofcities}">
             <!-- 
             <ListBoxItem Content="Quebec City"/>
@@ -17,8 +17,8 @@
             <ListBoxItem>Edmonton</ListBoxItem>
             <ListBoxItem>NewYork</ListBoxItem>-->
         </ListBox>
-        <Button x:Name="lb_Selection" Content="Select List Item" HorizontalAlignment="Left" Margin="143,270,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.352,-2.255" FontSize="16" Click="lb_Selection_Click"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="463,49,0,0" VerticalAlignment="Top" Width="120" 
+        <Button x:Name="lb_Selection" Content="Select List Item" HorizontalAlignment="Left" Margin="155,215,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.352,-2.255" FontSize="16" Click="lb_Selection_Click"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="310,244,0,0" VerticalAlignment="Top" Width="120" 
                   ItemsSource="{Binding nameofFruits}" SelectionChanged="comboBox_SelectionChanged">
             <!--<ComboBoxItem Content="Apple" FontSize="16"/>
             <ComboBoxItem Content="Orange" FontSize="16"/>
@@ -26,13 +26,26 @@
             <ComboBoxItem Background="#FFFBF793" Content="Pears" FontSize="16"/>
             <ComboBoxItem Content="Grapes" FontSize="16"/>-->
         </ComboBox>
-        <Button x:Name="cmBxSelection" Content="Select cmBx Item" HorizontalAlignment="Left" Margin="476,97,0,0" VerticalAlignment="Top" Click="cmBxSelection_Click"/>
+        <Button x:Name="cmBxSelection" Content="Select cmBx Item" HorizontalAlignment="Left" Margin="323,292,0,0" VerticalAlignment="Top" Click="cmBxSelection_Click"/>
         <CheckBox x:Name="checkBoxOne" Content="Toronto" HorizontalAlignment="Left" Margin="473,220,0,0" VerticalAlignment="Top" FontSize="16" Checked="checkBoxOne_Checked"/>
         <Button x:Name="checkButton" Content="Submit" HorizontalAlignment="Left" Margin="543,307,0,0" VerticalAlignment="Top" FontSize="16" Click="checkButton_Click"/>
-        <Label x:Name="label" Content="WHich is the capital of Canada?" HorizontalAlignment="Left" Margin="473,180,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="WHich is the capital of Canada?" HorizontalAlignment="Left" Margin="463,173,0,0" VerticalAlignment="Top" FontSize="16"/>
         <CheckBox x:Name="checkBoxTwo" Content="Montreal" HorizontalAlignment="Left" Margin="575,220,0,0" VerticalAlignment="Top" FontSize="16" Checked="checkBoxTwo_Checked"/>
         <CheckBox x:Name="checkBoxThird" Content="Ottawa" HorizontalAlignment="Left" Margin="473,252,0,0" VerticalAlignment="Top" FontSize="16" Checked="checkBoxThird_Checked"/>
         <CheckBox x:Name="checkBoxFour" Content="Halifax" HorizontalAlignment="Left" Margin="575,252,0,0" VerticalAlignment="Top" FontSize="16" Checked="checkBoxFour_Checked"/>
+        <PasswordBox x:Name="pswdBox" HorizontalAlignment="Left" Margin="145,276,0,0" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <Button x:Name="passwdBtn" Content="PasswordShow" HorizontalAlignment="Left" Margin="151,313,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.195,0.409" FontSize="16" Click="passwdBtn_Click"/>
+        <RadioButton x:Name="radioButtonOne" Content="Toronto" HorizontalAlignment="Left" Margin="468,366,0,0" VerticalAlignment="Top" FontSize="16" />
+        <RadioButton x:Name="radioButtonTwo" Content="Montreal" HorizontalAlignment="Left" Margin="585,366,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <RadioButton x:Name="radioButtonThree" Content="Ottawa" HorizontalAlignment="Left" Margin="468,407,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <RadioButton x:Name="radioButtonFour" Content="Halifax" HorizontalAlignment="Left" Margin="585,407,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="checkButtonTwo" Content="Submit" HorizontalAlignment="Left" Margin="543,451,0,0" VerticalAlignment="Top" FontSize="16" Click="checkButtonTwo_Click"/>
+        <ProgressBar HorizontalAlignment="Left" Height="25" Margin="58,451,0,0" VerticalAlignment="Top" Width="334" Minimum="0" Maximum="100" Value="{Binding WorkerState}"/>
+        <Calendar x:Name="calender" HorizontalAlignment="Left" Margin="394,36,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ShowDate" Content="Show Date" HorizontalAlignment="Left" Margin="620,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.661,0.633" FontSize="16" Click="ShowDate_Click"/>
+        <DatePicker x:Name="datePick" HorizontalAlignment="Left" Margin="620,27,0,0" VerticalAlignment="Top"/>
+
+
 
     </Grid>
 </Window>
