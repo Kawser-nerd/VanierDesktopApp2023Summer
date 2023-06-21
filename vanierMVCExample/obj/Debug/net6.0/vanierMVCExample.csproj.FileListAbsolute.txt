@@ -1,0 +1,15 @@
+C:\Users\kawser\source\repos\vanierMVCExample\bin\Debug\net6.0\vanierMVCExample.exe
+C:\Users\kawser\source\repos\vanierMVCExample\bin\Debug\net6.0\vanierMVCExample.deps.json
+C:\Users\kawser\source\repos\vanierMVCExample\bin\Debug\net6.0\vanierMVCExample.runtimeconfig.json
+C:\Users\kawser\source\repos\vanierMVCExample\bin\Debug\net6.0\vanierMVCExample.dll
+C:\Users\kawser\source\repos\vanierMVCExample\bin\Debug\net6.0\vanierMVCExample.pdb
+C:\Users\kawser\source\repos\vanierMVCExample\obj\Debug\net6.0\vanierMVCExample.csproj.AssemblyReference.cache
+C:\Users\kawser\source\repos\vanierMVCExample\obj\Debug\net6.0\vanierMVCExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kawser\source\repos\vanierMVCExample\obj\Debug\net6.0\vanierMVCExample.AssemblyInfoInputs.cache
+C:\Users\kawser\source\repos\vanierMVCExample\obj\Debug\net6.0\vanierMVCExample.AssemblyInfo.cs
+C:\Users\kawser\source\repos\vanierMVCExample\obj\Debug\net6.0\vanierMVCExample.csproj.CoreCompileInputs.cache
+C:\Users\kawser\source\repos\vanierMVCExample\obj\Debug\net6.0\vanierMVCExample.dll
+C:\Users\kawser\source\repos\vanierMVCExample\obj\Debug\net6.0\refint\vanierMVCExample.dll
+C:\Users\kawser\source\repos\vanierMVCExample\obj\Debug\net6.0\vanierMVCExample.pdb
+C:\Users\kawser\source\repos\vanierMVCExample\obj\Debug\net6.0\vanierMVCExample.genruntimeconfig.cache
+C:\Users\kawser\source\repos\vanierMVCExample\obj\Debug\net6.0\ref\vanierMVCExample.dll
