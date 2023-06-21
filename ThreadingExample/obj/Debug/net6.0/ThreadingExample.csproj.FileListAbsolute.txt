@@ -1,0 +1,15 @@
+C:\Users\kawser\source\repos\ThreadingExample\bin\Debug\net6.0\ThreadingExample.exe
+C:\Users\kawser\source\repos\ThreadingExample\bin\Debug\net6.0\ThreadingExample.deps.json
+C:\Users\kawser\source\repos\ThreadingExample\bin\Debug\net6.0\ThreadingExample.runtimeconfig.json
+C:\Users\kawser\source\repos\ThreadingExample\bin\Debug\net6.0\ThreadingExample.dll
+C:\Users\kawser\source\repos\ThreadingExample\bin\Debug\net6.0\ThreadingExample.pdb
+C:\Users\kawser\source\repos\ThreadingExample\obj\Debug\net6.0\ThreadingExample.csproj.AssemblyReference.cache
+C:\Users\kawser\source\repos\ThreadingExample\obj\Debug\net6.0\ThreadingExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kawser\source\repos\ThreadingExample\obj\Debug\net6.0\ThreadingExample.AssemblyInfoInputs.cache
+C:\Users\kawser\source\repos\ThreadingExample\obj\Debug\net6.0\ThreadingExample.AssemblyInfo.cs
+C:\Users\kawser\source\repos\ThreadingExample\obj\Debug\net6.0\ThreadingExample.csproj.CoreCompileInputs.cache
+C:\Users\kawser\source\repos\ThreadingExample\obj\Debug\net6.0\ThreadingExample.dll
+C:\Users\kawser\source\repos\ThreadingExample\obj\Debug\net6.0\refint\ThreadingExample.dll
+C:\Users\kawser\source\repos\ThreadingExample\obj\Debug\net6.0\ThreadingExample.pdb
+C:\Users\kawser\source\repos\ThreadingExample\obj\Debug\net6.0\ThreadingExample.genruntimeconfig.cache
+C:\Users\kawser\source\repos\ThreadingExample\obj\Debug\net6.0\ref\ThreadingExample.dll
