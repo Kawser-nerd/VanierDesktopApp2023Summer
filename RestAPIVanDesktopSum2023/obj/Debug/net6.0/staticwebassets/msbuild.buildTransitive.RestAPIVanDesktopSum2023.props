@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\RestAPIVanDesktopSum2023.props" />
+</Project>
