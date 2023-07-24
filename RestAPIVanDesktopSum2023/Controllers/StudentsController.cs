@@ -52,14 +52,55 @@ namespace RestAPIVanDesktopSum2023.Controllers
 
         [HttpGet]
         [Route("GetAllStudents")]
-        public Response GetStudent() { 
+        public Response GetStudent()
+        {
             Response response = new Response();
             NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("studentConnection").ToString());
             Applications app = new Applications();
-            response=app.GetAllStudents(con);
+            response = app.GetAllStudents(con);
             return response;
         }
 
+        // Reading/retrieving only one student with id
+        [HttpGet]
+        [Route("GetStudentById/{id}")] // in this way you are sending one parameter/information to the remote server. Here, you have to 
+        // pass the id everytime you call the GetStudentById API
+
+        public Response GetStudentById(int id) {
+            Response response = new Response();
+            NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("studentConnection").ToString());
+            Applications app = new Applications();
+            response = app.GetStudentById(con, id);
+            return response;
+        }
+
+        // Update information using RESTAPI
+
+        [HttpPut] // we generate put request to update the data information
+        [Route("UpdateStudent/{id}")]
+
+        public Response UpdateStudent(Students student, int id)
+        {
+            Response response = new Response();
+            NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("studentConnection").ToString());
+            Applications app = new Applications();
+            response = app.UpdateStudent(con, student, id);
+            return response;
+        }
+
+        // Delete information using RESTAPI, which is done using student ID
+
+        [HttpDelete] // to generate delete request
+        [Route("DeleteStudentById/{id}")]
+
+        public Response DeleteStudentById(int id) 
+        {
+            Response response = new Response();
+            NpgsqlConnection con = new NpgsqlConnection(_configuration.GetConnectionString("studentConnection").ToString());
+            Applications app = new Applications();
+            response = app.DeleteStudentById(con, id);
+            return response;
+        }
 
     }
 }
