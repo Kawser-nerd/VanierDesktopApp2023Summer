@@ -1,8 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using RestAPIWPFVanDesktopSum2023.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Json;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -59,9 +63,110 @@ namespace RestAPIWPFVanDesktopSum2023
             InitializeComponent();
         }
 
-        private void AddStudent_Click(object sender, RoutedEventArgs e)
+        private async void AddStudent_Click(object sender, RoutedEventArgs e)
         {
+            // we are going to send the student information/ structure we are getting from 
+            // the front-end. We need to create same Students.cs class in this application 
+            // as well
 
+            // Our Desktop application is going to communicate with the remote server 
+            // through rest api. Once you use the rest API, each rest API will generate a
+            // response for you which you need to catch in your program. Our rest API
+            // generates the response message as we have designed it in the Response.cs 
+            // class. So, we need the same structure/class in the WPF application as well
+            // to capture the response properly.
+
+            // create Students class instance to take the information from front-end
+
+            Students student = new Students();
+            student.name = Name.Text;
+            student.id = int.Parse(Id.Text);
+            student.email = email.Text;
+            student.term = term.Text;
+
+            // we need to pass this student instance to the remote server using restAPIs we 
+            // have created. So, we need to call the restAPi and need to pass the student 
+            // instance. We need to call the AddStudent API to pass the student value
+
+            // to use the AddStudent API, we need to generate an http Post request using
+            // the httpclient. Once the request is generated, we need to capture the response
+            // of the remote server/apis with a Response class instance
+
+            // generate http Post request
+            /*
+             * We need to use any http request as Asynchronous way to make sure our http 
+             * communication is stateless and will wait for the server to response without 
+             * expecting that the server will response with the generation of the request.
+             * 
+             * moreover, we need to use await subprocess to ensure that our httpclient instance
+             * will wait for a certain time without keeping our present progress of the wpf
+             * application, means it will make the program parallel executable
+             */
+
+            var response= await httpClient.PostAsJsonAsync("AddStudent", student);
+            
+            
+            // once we get the response, our next step is to decrypt the response. we can 
+            // use one label in the front-end section to get the message visible in the front-end
+
+            /// decrypt the response message
+
+            //responselbl.Visibility = Visibility.Visible; // to make the label visible in the front-end
+            //responselbl.Content = response.Content;
+            MessageBox.Show(response.StatusCode.ToString());
+            //Response res = JsonConvert.DeserializeObject<Response>(response.Content.ToString());
+            
+            //responselbl.Content = res.statusCode + " " + res.message;
+
+        }
+
+        private async void search_Click(object sender, RoutedEventArgs e)
+        {
+            var response = await httpClient.GetStringAsync("GetStudentById/" + int.Parse(searchtxt.Text));
+        
+            Response res = JsonConvert.DeserializeObject<Response>(response);
+
+            responselbl.Visibility = Visibility.Visible;
+            responselbl.Content = res.statusCode + " " + res.message;
+            Name.Text = res.student.name;
+            Id.Text = res.student.id.ToString();
+            email.Text = res.student.email;
+            term.Text = res.student.term;
+
+        }
+
+        private async void showStudent_Click(object sender, RoutedEventArgs e)
+        {
+            var response = await httpClient.GetStringAsync("GetAllStudents");
+
+            Response res = JsonConvert.DeserializeObject<Response>(response);
+
+            responselbl.Visibility = Visibility.Visible;
+            responselbl.Content = res.statusCode + " " + res.message;
+
+            studentList.ItemsSource = res.students;
+            DataContext = this;
+        }
+
+        private async void UpdateStudent_Click(object sender, RoutedEventArgs e)
+        {
+            Students student = new Students();
+
+            student.name= Name.Text;
+            //student.id = int.Parse(Id.Text);
+            student.email= email.Text;
+            student.term= term.Text;
+
+            var response = await httpClient.PutAsJsonAsync("UpdateStudent/"+int.Parse(searchtxt.Text), student);
+
+            MessageBox.Show(response.StatusCode.ToString());
+
+        }
+
+        private async void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            var response = await httpClient.DeleteAsync("DeleteStudentById/" + int.Parse(searchtxt.Text));
+            MessageBox.Show(response.ToString());
         }
     }
 }
