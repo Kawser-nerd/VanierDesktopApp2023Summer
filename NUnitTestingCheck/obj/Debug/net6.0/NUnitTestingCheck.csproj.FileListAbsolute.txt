@@ -1,0 +1,15 @@
+C:\Users\knafi\source\repos\NUnitTestingCheck\bin\Debug\net6.0\NUnitTestingCheck.exe
+C:\Users\knafi\source\repos\NUnitTestingCheck\bin\Debug\net6.0\NUnitTestingCheck.deps.json
+C:\Users\knafi\source\repos\NUnitTestingCheck\bin\Debug\net6.0\NUnitTestingCheck.runtimeconfig.json
+C:\Users\knafi\source\repos\NUnitTestingCheck\bin\Debug\net6.0\NUnitTestingCheck.dll
+C:\Users\knafi\source\repos\NUnitTestingCheck\bin\Debug\net6.0\NUnitTestingCheck.pdb
+C:\Users\knafi\source\repos\NUnitTestingCheck\obj\Debug\net6.0\NUnitTestingCheck.csproj.AssemblyReference.cache
+C:\Users\knafi\source\repos\NUnitTestingCheck\obj\Debug\net6.0\NUnitTestingCheck.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\knafi\source\repos\NUnitTestingCheck\obj\Debug\net6.0\NUnitTestingCheck.AssemblyInfoInputs.cache
+C:\Users\knafi\source\repos\NUnitTestingCheck\obj\Debug\net6.0\NUnitTestingCheck.AssemblyInfo.cs
+C:\Users\knafi\source\repos\NUnitTestingCheck\obj\Debug\net6.0\NUnitTestingCheck.csproj.CoreCompileInputs.cache
+C:\Users\knafi\source\repos\NUnitTestingCheck\obj\Debug\net6.0\NUnitTestingCheck.dll
+C:\Users\knafi\source\repos\NUnitTestingCheck\obj\Debug\net6.0\refint\NUnitTestingCheck.dll
+C:\Users\knafi\source\repos\NUnitTestingCheck\obj\Debug\net6.0\NUnitTestingCheck.pdb
+C:\Users\knafi\source\repos\NUnitTestingCheck\obj\Debug\net6.0\NUnitTestingCheck.genruntimeconfig.cache
+C:\Users\knafi\source\repos\NUnitTestingCheck\obj\Debug\net6.0\ref\NUnitTestingCheck.dll
