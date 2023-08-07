@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kawser\\source\\repos\\DataGridViewTesting\\DataGridViewTesting.csproj": {}
+    "C:\\Users\\kawser\\Desktop\\vanier college codes\\VanierDesktopApp2023Summer\\DataGridViewTesting\\DataGridViewTesting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kawser\\source\\repos\\DataGridViewTesting\\DataGridViewTesting.csproj": {
+    "C:\\Users\\kawser\\Desktop\\vanier college codes\\VanierDesktopApp2023Summer\\DataGridViewTesting\\DataGridViewTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kawser\\source\\repos\\DataGridViewTesting\\DataGridViewTesting.csproj",
+        "projectUniqueName": "C:\\Users\\kawser\\Desktop\\vanier college codes\\VanierDesktopApp2023Summer\\DataGridViewTesting\\DataGridViewTesting.csproj",
         "projectName": "DataGridViewTesting",
-        "projectPath": "C:\\Users\\kawser\\source\\repos\\DataGridViewTesting\\DataGridViewTesting.csproj",
+        "projectPath": "C:\\Users\\kawser\\Desktop\\vanier college codes\\VanierDesktopApp2023Summer\\DataGridViewTesting\\DataGridViewTesting.csproj",
         "packagesPath": "C:\\Users\\kawser\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kawser\\source\\repos\\DataGridViewTesting\\obj\\",
+        "outputPath": "C:\\Users\\kawser\\Desktop\\vanier college codes\\VanierDesktopApp2023Summer\\DataGridViewTesting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
