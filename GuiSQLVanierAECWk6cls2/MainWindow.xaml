@@ -1,0 +1,27 @@
+﻿<Window x:Class="GuiSQLVanierAECWk6cls2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuiSQLVanierAECWk6cls2"
+        mc:Ignorable="d"
+        Title="CRUD Operation" Height="450" Width="800">
+    <Grid>
+
+        <TextBox x:Name="TextBox_Name" HorizontalAlignment="Left" Margin="171,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1"/>
+        <Label x:Name="lbl1" Content="Name" HorizontalAlignment="Left" Margin="105,54,0,0" VerticalAlignment="Top" FontSize="14" Grid.Column="1"/>
+        <TextBox x:Name="TextBox_id" HorizontalAlignment="Left" Margin="171,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label x:Name="lbl2" Content="Id" HorizontalAlignment="Left" Margin="105,80,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="TextBox_Email" HorizontalAlignment="Left" Margin="171,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label x:Name="lbl3" Content="Email" HorizontalAlignment="Left" Margin="105,107,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="TextBox_Term" HorizontalAlignment="Left" Margin="171,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label x:Name="lbl4" Content="Term" HorizontalAlignment="Left" Margin="105,137,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="insert" Content="Insert" HorizontalAlignment="Left" Margin="403,54,0,0" VerticalAlignment="Top" Height="44" Width="51" Grid.Column="1" Click="insert_Click"/>
+        <Label x:Name="lblMain" Content="PostGreSQL DB Connection and CRUD Operation" HorizontalAlignment="Left" Margin="221,0,0,0" VerticalAlignment="Top" Width="265" Height="36" Grid.Column="1"/>
+        <DataGrid x:Name="dataGridView"  Margin="75,184,57,106"
+                  RowEditEnding="dataGridView_RowEditEnding"
+                  />
+        <Button x:Name="update" Content="Button" HorizontalAlignment="Left" Margin="516,67,0,0" VerticalAlignment="Top" Click="update_Click"/>
+
+    </Grid>
+</Window>
