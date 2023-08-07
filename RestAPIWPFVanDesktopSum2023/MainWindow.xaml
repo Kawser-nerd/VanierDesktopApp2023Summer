@@ -1,0 +1,29 @@
+﻿<Window x:Class="RestAPIWPFVanDesktopSum2023.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestAPIWPFVanDesktopSum2023"
+        mc:Ignorable="d"
+        Title="RestAPI Testing" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="studentList"  Margin="137,258,130,49"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="210,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="14"/>
+        <Label x:Name="namelb" Content="Name" HorizontalAlignment="Left" Margin="135,91,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="Id" HorizontalAlignment="Left" Margin="210,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="14"/>
+        <Label x:Name="idLbl" Content="ID" HorizontalAlignment="Left" Margin="141,127,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="term" HorizontalAlignment="Left" Margin="210,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="14"/>
+        <Label x:Name="termlbl" Content="Term" HorizontalAlignment="Left" Margin="135,200,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Margin="210,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="14"/>
+        <Label x:Name="emailLbl" Content="Email" HorizontalAlignment="Left" Margin="132,161,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Student Database Connection with Rest API Properties" HorizontalAlignment="Left" Margin="130,10,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Button x:Name="AddStudent" Content="Add Student" HorizontalAlignment="Left" Margin="441,91,0,0" VerticalAlignment="Top" FontSize="14" Height="52" Click="AddStudent_Click"/>
+        <Button x:Name="showStudent" Content="List All Student" HorizontalAlignment="Left" Margin="434,165,0,0" VerticalAlignment="Top" FontSize="14" Height="52" Click="showStudent_Click"/>
+        <Button x:Name="search" Content="Search" HorizontalAlignment="Left" Margin="695,15,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.705,1.664" Click="search_Click"/>
+        <TextBox x:Name="searchtxt" HorizontalAlignment="Left" Margin="596,16,0,0" TextWrapping="Wrap" Text="id" VerticalAlignment="Top" Width="83" FontSize="14"/>
+        <Button x:Name="UpdateStudent" Content="Update Student" HorizontalAlignment="Left" Margin="569,92,0,0" VerticalAlignment="Top" FontSize="14" Height="52" Click="UpdateStudent_Click"/>
+        <Button x:Name="Delete" Content="Delete Student" HorizontalAlignment="Left" Margin="569,165,0,0" VerticalAlignment="Top" FontSize="14" Height="52" Click="Delete_Click"/>
+        <Label x:Name="responselbl" Content="Label" HorizontalAlignment="Left" Margin="454,45,0,0" VerticalAlignment="Top" Width="216" Foreground="#FFFA0606" Visibility="Hidden"/>
+
+    </Grid>
+</Window>

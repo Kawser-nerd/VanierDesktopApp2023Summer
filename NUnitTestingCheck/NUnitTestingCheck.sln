@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestingCheck", "NUnitTestingCheck.csproj", "{525CA2A2-D859-4140-9C63-F340B923E69C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingMiniCalc", "..\TestingMiniCalc\TestingMiniCalc.csproj", "{F1A734EA-A27E-49CD-97BB-1083FB04607F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{525CA2A2-D859-4140-9C63-F340B923E69C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{525CA2A2-D859-4140-9C63-F340B923E69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{525CA2A2-D859-4140-9C63-F340B923E69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{525CA2A2-D859-4140-9C63-F340B923E69C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1A734EA-A27E-49CD-97BB-1083FB04607F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1A734EA-A27E-49CD-97BB-1083FB04607F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1A734EA-A27E-49CD-97BB-1083FB04607F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1A734EA-A27E-49CD-97BB-1083FB04607F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6903547-D1FB-4D08-BCA4-122335B5B5BA}
+	EndGlobalSection
+EndGlobal
