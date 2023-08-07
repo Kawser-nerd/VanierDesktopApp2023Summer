@@ -1,6 +1,7 @@
 ﻿using Npgsql;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -92,6 +93,7 @@ namespace GuiSQLVanierAECWk6cls2
         public MainWindow()
         {
             InitializeComponent();
+            dataGridView.ItemsSource = GetStudents();
         }
 
         // step 3: SQL Command Gneration and Execution
@@ -105,7 +107,7 @@ namespace GuiSQLVanierAECWk6cls2
                 con.Open();
 
                 // create the SQL query
-                string Query = "insert into students values(@name, default, @email, @term)"; 
+                string Query = "insert into students values(@name, @id, @email, @term)"; 
 
                 // create sql Command 
                 cmd = new NpgsqlCommand(Query, con); // this is the command adapter, we need to pass
@@ -113,7 +115,7 @@ namespace GuiSQLVanierAECWk6cls2
 
                 // we now need to add the values for the parameters in the sql query
                 cmd.Parameters.AddWithValue("@name", TextBox_Name.Text);
-                //cmd.Parameters.AddWithValue("@id", int.Parse("DEFAULT"));
+                cmd.Parameters.AddWithValue("@id", int.Parse(TextBox_id.Text));
                 cmd.Parameters.AddWithValue("@email", TextBox_Email.Text);
                 cmd.Parameters.AddWithValue("@term", TextBox_Term.Text);
 
@@ -129,5 +131,114 @@ namespace GuiSQLVanierAECWk6cls2
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private static List<student> GetStudents()
+        {
+            establishConnection();
+            List<student> studentList = new List<student>();
+            try { 
+                // Read the students from the Database
+                string Query = "select * from students";
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(Query, con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                
+
+                for(int i=0; i<dt.Rows.Count; i++)
+                {
+                    student std = new student();
+                    std.Name = (string) dt.Rows[i]["name"];
+                    std.Id = (int)dt.Rows[i]["id"];
+                    std.Email = (string)dt.Rows[i]["email"];
+                    std.Term = (string)dt.Rows[i]["term"];
+
+                    studentList.Add(std);
+                }
+            
+            } catch(NpgsqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            return studentList;
+        }
+
+        private void dataGridView_RowEditEnding(object sender, DataGridRowEditEndingEventArgs e)
+        {
+            // Database Update Code
+
+            /*
+             * Each row in the dataGrid is going to be update by you. Once you update, the 
+             * row you updated will trigger this event. Once this event is trigger, the 
+             * row information will be collected by the event handler and the data, in terms
+             * of dataContext will be returned in this block.
+             * 
+             * You need the class structure to collect the value and update it in the database
+             * with the updated value
+             */
+            student student = e.Row.DataContext as student;
+
+            establishConnection();
+            try {
+                con.Open();
+                string Query = "update students set name=@Name, email=@Email, term=@Term where id=@Id";
+                cmd = new NpgsqlCommand(Query, con);
+                cmd.Parameters.AddWithValue("@Name", student.Name);
+                cmd.Parameters.AddWithValue("@Email", student.Email);
+                cmd.Parameters.AddWithValue("@Term", student.Term);
+                cmd.Parameters.AddWithValue("@Id", 1032);
+                MessageBox.Show(student.Id.ToString());
+                int i =cmd.ExecuteNonQuery();
+
+                if (i > 0)
+                {
+                    MessageBox.Show("Update Successful");
+                    
+                }
+
+                
+                con.Close();
+
+            } catch(NpgsqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void update_Click(object sender, RoutedEventArgs e)
+        {
+            establishConnection();
+            try
+            {
+                con.Open();
+                string Query = "update students set name=@Name, email=@Email, term=@Term where id=@Id";
+                cmd = new NpgsqlCommand(Query, con);
+                cmd.Parameters.AddWithValue("@Name", TextBox_Name.Text);
+                cmd.Parameters.AddWithValue("@Email", TextBox_Email.Text);
+                cmd.Parameters.AddWithValue("@Term", TextBox_Term.Text);
+                cmd.Parameters.AddWithValue("@Id", int.Parse(TextBox_id.Text));
+                
+                int i = cmd.ExecuteNonQuery();
+
+                if (i > 0)
+                {
+                    MessageBox.Show("Update Successful");
+
+                }
+
+
+                con.Close();
+
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+        }
     }
+    
 }
