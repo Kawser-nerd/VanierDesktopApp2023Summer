@@ -1,0 +1,19 @@
+﻿<Window x:Class="databaseTesting.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:databaseTesting"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="NameTxt" HorizontalAlignment="Left" Margin="129,42,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <TextBox x:Name="AgeTxt" HorizontalAlignment="Left" Margin="129,74,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <TextBox x:Name="EmailTxt" HorizontalAlignment="Left" Margin="129,106,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label x:Name="lblOne" Content="Name" HorizontalAlignment="Left" Margin="74,38,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="lblTwo" Content="Age" HorizontalAlignment="Left" Margin="74,70,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="lblThree" Content="Email" HorizontalAlignment="Left" Margin="74,101,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="insert" Content="Insert Data" HorizontalAlignment="Left" Margin="166,193,0,0" VerticalAlignment="Top" Click="insert_Click"/>
+
+    </Grid>
+</Window>

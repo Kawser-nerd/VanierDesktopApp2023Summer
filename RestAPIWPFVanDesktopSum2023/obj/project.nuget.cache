@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yIidb160LLhxLmwnTHc5HgNfO8iL4ujXH+QLG4sEyb64RN7PQkmpjpgu0lhqr1gdIifUMCsXvDw2C1bbYyMYNw==",
+  "dgSpecHash": "31AcHGEFd+wVDB/gW399Bkc+0aZg0fmZ4yP2VYcuqrRnHwr04lo6IJYy/P7P2DfLoWyil2eE/CN4Njij1G0fIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\knafi\\source\\repos\\RestAPIWPFVanDesktopSum2023\\RestAPIWPFVanDesktopSum2023.csproj",
+  "projectFilePath": "C:\\Users\\kawser\\Desktop\\vanier college codes\\VanierDesktopApp2023Summer\\RestAPIWPFVanDesktopSum2023\\RestAPIWPFVanDesktopSum2023.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\knafi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\kawser\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
